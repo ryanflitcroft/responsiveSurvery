@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+status<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -37,6 +37,9 @@
         display: inline-block;
         width: 50%;
       }
+      .maxW {
+        max-width: 320px;
+      }
       img {
         background-color: #ffffff55;
       }
@@ -45,18 +48,22 @@
         /*  */
         .block {
           width: 100%;
+          max-width: 640px;
+        }
+        .maxW {
+          max-width: 640px;
         }
       }
     </style>
   </head>
   <body>
-    <table style="border: 3px solid black" width="90%">
+    <table style="border: 3px solid black" width="90%" class="center">
       <tr>
         <td colspan="2" style="text-align: center">Take this survey!</td>
       </tr>
       <tr class="widthFull">
         <!-- 1 - 5 -->
-        <td class="widthHalf block">
+        <td class="widthHalf block maxW">
           <table class="widthFull" style="border-spacing: 0">
             <tr class="bgGreen">
               <td class="center square50">
@@ -113,7 +120,7 @@
           </table>
         </td>
         <!-- 6 - 10 -->
-        <td class="widthHalf block">
+        <td class="widthHalf block maxW">
           <table class="widthFull" style="border-spacing: 0">
             <tr class="bgBlue">
               <td class="center square50">
