@@ -1,4 +1,4 @@
-status<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,15 +6,32 @@ status<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      /* VISUAL */
       * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }
-      .square50 {
-        width: 50px !important;
-        height: 50px !important;
+      html,
+      body {
+        width: 100vw;
+        height: 100vh;
       }
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        background-color: #ffffff55;
+      }
+      .bgGreen {
+        background-color: #00880055;
+      }
+      .bgBlue {
+        background-color: #00008855;
+      }
+      /*  */
+
+      /* LAYOUT */
       .justify {
         text-align: justify;
       }
@@ -27,12 +44,6 @@ status<!DOCTYPE html>
       .widthHalf {
         width: 50%;
       }
-      .bgGreen {
-        background-color: #00880055;
-      }
-      .bgBlue {
-        background-color: #00008855;
-      }
       .block {
         display: inline-block;
         width: 50%;
@@ -40,12 +51,9 @@ status<!DOCTYPE html>
       .maxW {
         max-width: 320px;
       }
-      img {
-        background-color: #ffffff55;
-      }
 
+      /* RESPONSIVE */
       @media only screen and (max-width: 640px) {
-        /*  */
         .block {
           width: 100%;
           max-width: 640px;
@@ -54,67 +62,35 @@ status<!DOCTYPE html>
           max-width: 640px;
         }
       }
+      /*  */
     </style>
   </head>
   <body>
+    <!-- Parent container, 2 rows -->
     <table style="border: 3px solid black" width="90%" class="center">
       <tr>
         <td colspan="2" style="text-align: center">Take this survey!</td>
       </tr>
+
       <tr class="widthFull">
         <!-- 1 - 5 -->
         <td class="widthHalf block maxW">
           <table class="widthFull" style="border-spacing: 0">
             <tr class="bgGreen">
-              <td class="center square50">
-                <a href=""
-                  ><img
-                    src="./1.png"
-                    alt="1"
-                    width="50"
-                    height="50"
-                    style="object-fit: contain"
-                /></a>
+              <td class="center">
+                <a href=""><img src="./1.png" alt="1" /></a>
               </td>
-              <td class="center square50">
-                <a href=""
-                  ><img
-                    src="./2.png"
-                    alt="2"
-                    width="50"
-                    height="50"
-                    style="object-fit: contain"
-                /></a>
+              <td class="center">
+                <a href=""><img src="./2.png" alt="2" /></a>
               </td>
-              <td class="center square50">
-                <a href=""
-                  ><img
-                    src="./3.png"
-                    alt="3"
-                    width="50"
-                    height="50"
-                    style="object-fit: contain"
-                /></a>
+              <td class="center">
+                <a href=""><img src="./3.png" alt="3" /></a>
               </td>
-              <td class="center square50">
-                <a href=""
-                  ><img
-                    src="./4.png"
-                    alt="4"
-                    width="50"
-                    height="50"
-                    style="object-fit: contain"
-                /></a>
+              <td class="center">
+                <a href=""><img src="./4.png" alt="4" /></a>
               </td>
-              <td class="center square50">
-                <a href=""
-                  ><img
-                    src="./5.png"
-                    alt="5"
-                    width="50"
-                    height="50"
-                    style="object-fit: contain"
-                /></a>
+              <td class="center">
+                <a href=""><img src="./5.png" alt="5" /></a>
               </td>
             </tr>
           </table>
@@ -123,55 +99,20 @@ status<!DOCTYPE html>
         <td class="widthHalf block maxW">
           <table class="widthFull" style="border-spacing: 0">
             <tr class="bgBlue">
-              <td class="center square50">
-                <a href=""
-                  ><img
-                    src="./6.png"
-                    alt="6"
-                    width="50"
-                    height="50"
-                    style="object-fit: contain"
-                /></a>
+              <td class="center">
+                <a href=""><img src="./6.png" alt="6" /></a>
               </td>
-              <td class="center square50">
-                <a href=""
-                  ><img
-                    src="./7.png"
-                    alt="7"
-                    width="50"
-                    height="50"
-                    style="object-fit: contain"
-                /></a>
+              <td class="center">
+                <a href=""><img src="./7.png" alt="7" /></a>
               </td>
-              <td class="center square50">
-                <a href=""
-                  ><img
-                    src="./8.png"
-                    alt="8"
-                    width="50"
-                    height="50"
-                    style="object-fit: contain"
-                /></a>
+              <td class="center">
+                <a href=""><img src="./8.png" alt="8" /></a>
               </td>
-              <td class="center square50">
-                <a href=""
-                  ><img
-                    src="./9.png"
-                    alt="9"
-                    width="50"
-                    height="50"
-                    style="object-fit: contain"
-                /></a>
+              <td class="center">
+                <a href=""><img src="./9.png" alt="9" /></a>
               </td>
-              <td class="center square50">
-                <a href=""
-                  ><img
-                    src="./10.png"
-                    alt="10"
-                    width="50"
-                    height="50"
-                    style="object-fit: contain"
-                /></a>
+              <td class="center">
+                <a href=""><img src="./10.png" alt="10" /></a>
               </td>
             </tr>
           </table>
